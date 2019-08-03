@@ -1,7 +1,3 @@
-# camunda-first
-```
-camunda-first
-
 ## CAMUNDA
 ```
 Link Java: https://github.com/mattferreiras/camunda-course-java
@@ -14,7 +10,7 @@ sudo docker-compose -f docker-compose.yml up
 ## logar no camunda
 ```
 localhost:8080/app/cockpit/default/#/login
-
+```
 ## localhost
 ```
 localhost:8080/rest
@@ -23,11 +19,10 @@ localhost:8080/rest
 ## doc
 ```
 docs.comunda.org/
-
+```
 ## pode ser visto na doc do comunda
 ```
 localhost:8080/rest/process-definition/key/do_something/start
-```
 
 {
 
@@ -45,10 +40,10 @@ localhost:8080/rest/process-definition/key/do_something/start
   }
 }
 ```
-/pode ser visto na doc do comunda
+## pode ser visto na doc do comunda
 ```
 localhost:8080/rest/process-definition/key/wait_mesage/start
-```
+
 {
 
    "variables":{
@@ -65,6 +60,7 @@ localhost:8080/rest/process-definition/key/wait_mesage/start
   }
 }
 ```
+## pode ser visto na doc do comunda
 localhost:8080/rest/message/start
 ```
 {
