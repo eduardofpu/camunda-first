@@ -61,7 +61,7 @@ localhost:8080/rest/process-definition/key/wait_mesage/start
 }
 ```
 ## pode ser visto na doc do comunda
-localhost:8080/rest/message/start
+localhost:8080/rest/message
 ```
 {
 

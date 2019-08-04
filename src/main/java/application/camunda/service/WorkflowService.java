@@ -1,5 +1,6 @@
 package application.camunda.service;
 
+import application.camunda.model.MessageName;
 import org.camunda.bpm.engine.RuntimeService;
 import org.camunda.bpm.engine.runtime.MessageCorrelationResult;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -20,8 +21,10 @@ public class WorkflowService {
         return runtimeService.startProcessInstanceByKey("do_something").getProcessDefinitionId();
     }
 
-    public MessageCorrelationResult sendMessage(String message) {
-        return runtimeService.createMessageCorrelation("message" + message)
+    public MessageCorrelationResult sendMessage(MessageName name) {
+        String messageName = name.getMessageName();
+
+        return runtimeService.createMessageCorrelation("message_" + messageName)
                 .correlateWithResult();
     }
 
