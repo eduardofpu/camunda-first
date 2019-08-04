@@ -22,7 +22,7 @@ docs.comunda.org/
 ```
 ## pode ser visto na doc do comunda
 ```
-localhost:8080/rest/process-definition/key/do_something/start
+POST localhost:8080/rest/process-definition/key/do_something/start
 
 {
 
@@ -42,7 +42,7 @@ localhost:8080/rest/process-definition/key/do_something/start
 ```
 ## pode ser visto na doc do comunda
 ```
-localhost:8080/rest/process-definition/key/wait_mesage/start
+POST localhost:8080/rest/process-definition/key/wait_mesage/start
 
 {
 
@@ -61,17 +61,26 @@ localhost:8080/rest/process-definition/key/wait_mesage/start
 }
 ```
 ## pode ser visto na doc do comunda
-localhost:8080/rest/message
 ```
-{
+POST localhost:8080/rest/message
 
+{
    "messageName":"message_Joao"
 }
 ```
 
+## WorkflowController
+```
+POST localhost:8080/workflow/message
 
-
-
+{
+   "messageName":"Joao"
+}
+```
+## WorkflowController
+```
+POST localhost:8080/workflow/start
+```
 
 
 
