@@ -28,4 +28,8 @@ public class WorkflowService {
                 .correlateWithResult();
     }
 
+    public String corPredilectStart(){
+        return runtimeService.startProcessInstanceByKey("cor_predilect").getId();
+    }
+
 }

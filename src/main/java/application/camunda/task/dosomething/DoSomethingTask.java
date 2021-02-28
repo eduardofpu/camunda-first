@@ -1,11 +1,12 @@
-package application.camunda.task;
+package application.camunda.task.dosomething;
 
 import org.camunda.bpm.engine.delegate.DelegateExecution;
-import org.camunda.bpm.engine.delegate.JavaDelegate;
 import org.springframework.stereotype.Component;
 
+import application.camunda.config.TaskDelegate;
+
 @Component
-public class DoSomethingTask implements JavaDelegate {
+public class DoSomethingTask extends TaskDelegate {
 
     public void execute(DelegateExecution delegateExecution) throws Exception {
 

@@ -37,6 +37,12 @@ public class WorkflowController {
         return null;
     }
 
+    @PostMapping("/cor-predilect")
+    @ResponseStatus(HttpStatus.OK)
+    public String startCorPredilect(){
+        return workflowService.corPredilectStart();
+    }
+
 //    @PostMapping(value = "/message", produces = MediaType.APPLICATION_JSON_UTF8_VALUE)
 //    public ResponseEntity<?> sendMessage(@RequestBody MessageName name){
 //
